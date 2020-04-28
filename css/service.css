@@ -1,0 +1,46 @@
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #6f6328;
+}
+
+.service:last-child {
+    border-bottom: none;
+}
+
+.service__title {
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 2.5;
+}
+
+.service__price {
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    .service__title {
+        font-size: 18px;
+    }
+    .service__price {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .service {
+        flex-direction: column;
+        text-align: center;
+        padding: 8px 0;
+    }
+    .service__title {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+    .service__price {
+        font-size: 18px;
+    }
+}
